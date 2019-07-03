@@ -1,0 +1,99 @@
+body {
+    background: url(../images/thanos.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  } 
+
+.heading{
+    font-size: 48px;
+    color: white;
+    /* background-color: #cb6f33; */
+    margin: 5px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 68px;
+    /* float: left; */
+}
+
+.instructions{
+    margin-top: 10px;
+    width: 400px;
+    padding: 15px;
+
+    /* margin-right: 500px; */
+    /* background-color:black; */
+    /* opacity: .5; */
+    /* filter: alpha(opacity=50); */
+}
+li{
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;  
+}
+.computerRandom {
+    margin: 15px;
+    background-color: #00295b;
+    width: 100px;
+    height: 75px;
+}
+.computerRandom h3 {
+    color: white;
+}
+
+#wins-loss{
+    margin: 15px;
+    background-color: red;
+    height: 75px;
+    width: 100px;
+    color: white;
+}
+
+
+.crystals{
+    margin: 15px;
+    padding-top: 10px;
+}
+
+.purple{
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+    content:url(../images/purple.jpg);
+}
+.yellow{
+    
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+    content:url(../images/yellow.jpg);
+}
+.red{
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+    content:url(../images/red.jpg);
+}
+.green{
+    height: 100px;
+    width: 100px;
+    float: left;
+    content:url(../images/green.jpg);
+}
+
+#scoreHeader{
+    margin: 10px;
+    color: white;
+}
+
+#scoreCard{
+    /* float: left; */
+    margin-left:5px;
+    background-color: chartreuse;
+    height: 75px;
+    width: 100px;
+    
+}
