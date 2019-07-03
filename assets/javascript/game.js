@@ -24,3 +24,11 @@ computer display and crystals.
 
 
 */
+
+alert("Welcome to Crystal Collector, Enjoy!!!");
+
+var wins = 0;
+var losses= 0;
+var randomNumber = 0;
+
+
