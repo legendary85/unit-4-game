@@ -25,10 +25,43 @@ computer display and crystals.
 
 */
 
-alert("Welcome to Crystal Collector, Enjoy!!!");
+// alert("Welcome to Crystal Collector, Enjoy!!!");
+$(document).ready(function() {
+    // console.log( "ready!" );
+
 
 var wins = 0;
 var losses= 0;
 var randomNumber = 0;
+var score = 0;
+
+
+
+$("#start").on('click',function(){
+    alert("test");
+// //random number generator that will be displayed for player to match.
+// var computerNumberToGuess = Math.floor(Math.random() * 88) + 20;
+
+// //random number generator for each crystal to generate and hide until clicked.
+// var randomNumberGenerator1 = Math.floor(Math.random() * 12) + 1;
+// var randomNumberGenerator2 = Math.floor(Math.random() * 12) + 1;
+// var randomNumberGenerator3 = Math.floor(Math.random() * 12) + 1;
+// var randomNumberGenerator4 = Math.floor(Math.random() * 12) + 1;
+
+// // document.getElementById("playerScore").innerHTML= score;
+
+
+//         var numberGenerator = function(){
+//             randomNumber=computerNumberToGuess;
+//             console.log(computerNumberToGuess);
+//             document.getElementById("random").innerHTML=randomNumber;
+
+            
+            
+//         }
+});
+    });
+    
+
 
 
