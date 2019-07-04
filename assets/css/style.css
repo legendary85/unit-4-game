@@ -4,15 +4,18 @@ body {
     height: 100%;
     overflow: hidden;
   } 
+.container{
+    padding-bottom: 20px;
+}
 
 .heading{
     font-size: 48px;
     color: white;
     /* background-color: #cb6f33; */
     margin: 5px;
-    padding-top: 30px;
+    padding-top: 5px;
     text-align: center;
-    font-size: 68px;
+    font-size: 50px;
     /* float: left; */
 }
 
@@ -31,14 +34,26 @@ li{
     font-size: 15px;
     line-height: 1.6;  
 }
+.button-center{
+    text-align: center;
+}
+
 .computerRandom {
     margin: 15px;
-    background-color: #00295b;
-    width: 100px;
+    /* background-color: #00295b; */
+    width: 125px;
     height: 75px;
 }
 .computerRandom h3 {
+    text-align: center;
+    padding-top: 10px;
     color: white;
+}
+
+#random-number{
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
 }
 
 #wins-loss{
@@ -51,37 +66,42 @@ li{
 
 
 .crystals{
-    margin: 15px;
-    padding-top: 10px;
+    margin: 5px;
+    padding-top: 5px;
+    float: right;
 }
 
 .purple{
     height: 100px;
     width: 100px;
     float: left;
-    padding-right: 10px;
+    margin-right: 10px;
     content:url(../images/purple.jpg);
+    border: solid 1px gray;
 }
 .yellow{
     
     height: 100px;
     width: 100px;
     float: left;
-    padding-right: 10px;
+    margin-right: 10px;
     content:url(../images/yellow.jpg);
+    border: solid 1px gray;
 }
 .red{
     height: 100px;
     width: 100px;
     float: left;
-    padding-right: 10px;
+    margin-right: 10px;
     content:url(../images/red.jpg);
+    border: solid 1px gray;
 }
 .green{
     height: 100px;
     width: 100px;
     float: left;
     content:url(../images/green.jpg);
+    border: solid 1px gray;
 }
 
 #scoreHeader{
@@ -92,8 +112,12 @@ li{
 #scoreCard{
     /* float: left; */
     margin-left:5px;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     height: 75px;
     width: 100px;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
     
 }

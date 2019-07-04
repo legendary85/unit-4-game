@@ -38,23 +38,62 @@ var score = 0;
 
 
 $("#start").on('click',function(){
-    alert("test");
+    // alert("test");
 // //random number generator that will be displayed for player to match.
-// var computerNumberToGuess = Math.floor(Math.random() * 88) + 20;
+var computerNumberToGuess = Math.floor(Math.random() * 88) + 20;
+//console.log to see if the random numbers are being generated everytime I click start.
+console.log(computerNumberToGuess);
+$( "#random-number" ).html(computerNumberToGuess);
+// $('#random-number').text(computerNumberToGuess);
 
 // //random number generator for each crystal to generate and hide until clicked.
-// var randomNumberGenerator1 = Math.floor(Math.random() * 12) + 1;
-// var randomNumberGenerator2 = Math.floor(Math.random() * 12) + 1;
-// var randomNumberGenerator3 = Math.floor(Math.random() * 12) + 1;
-// var randomNumberGenerator4 = Math.floor(Math.random() * 12) + 1;
+var randomNumberGenerator1 = Math.floor(Math.random() * 12) + 1;
+var randomNumberGenerator2 = Math.floor(Math.random() * 12) + 1;
+var randomNumberGenerator3 = Math.floor(Math.random() * 12) + 1;
+var randomNumberGenerator4 = Math.floor(Math.random() * 12) + 1;
+
+
+//console.log to see if random number are generating for all four crystals everytime I click start.
+
+$('.purple').on('click',function(){
+    randomNumberGenerator1 += randomNumberGenerator1;
+    alert('Your new score is ' + randomNumberGenerator1);
+    $( "#scoreCard" ).html(randomNumberGenerator1);
+    // console.log(randomNumberGenerator1);
+});
+
+
+$('.yellow').on('click',function(){
+    randomNumberGenerator2 += randomNumberGenerator2;
+    alert('Your new score is ' + randomNumberGenerator2);
+    $( "#scoreCard" ).html(randomNumberGenerator2);
+    // console.log(randomNumberGenerator2);
+    
+});
+
+$('.red').on('click',function(){
+    randomNumberGenerator3 += randomNumberGenerator3;
+    alert('Your new score is ' + randomNumberGenerator3);
+    $( "#scoreCard" ).html(randomNumberGenerator3);
+    // console.log(randomNumberGenerator3);
+    
+});
+
+$('.green').on('click',function(){
+    randomNumberGenerator4 += randomNumberGenerator4;
+    alert('Your new score is ' + randomNumberGenerator4);
+    $( "#scoreCard" ).html(randomNumberGenerator2);
+    // console.log(randomNumberGenerator4);
+    
+});
 
 // // document.getElementById("playerScore").innerHTML= score;
 
 
-//         var numberGenerator = function(){
-//             randomNumber=computerNumberToGuess;
+        // var numberGenerator = function(){
+            // randomNumber=computerNumberToGuess;
 //             console.log(computerNumberToGuess);
-//             document.getElementById("random").innerHTML=randomNumber;
+            
 
             
             
