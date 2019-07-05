@@ -12,6 +12,7 @@ body {
 .heading{
     text-transform: uppercase;
     font-family: 'Audiowide', cursive;
+
     font-size: 48px;
     color: white;
     /* background-color: #cb6f33; */
@@ -113,8 +114,6 @@ li{
     border: solid 1px gray;
     
 }
-
-
 
 .yellow{
     
