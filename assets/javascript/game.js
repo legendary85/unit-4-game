@@ -49,11 +49,11 @@ $(document).ready(function () {
 
     reset();
 
-// get a random number between max and min.
-    function getRandomNumber ( max , min){
-        return Math.floor(Math.random()*(max - min)+min);
+    // get a random number between max and min.
+    function getRandomNumber(max, min) {
+        return Math.floor(Math.random() * (max - min) + min);
     }
-// intitalize variables and start game.    
+    // intitalize variables and start game.    
     function reset() {
         computerNumberToGuess = getRandomNumber(maxComputerNumber, minCompuetNumber);
         // console.log('RANDOM-COMPUTER ' + computerNumberToGuess);
@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     //created a fucntion to call when ever player wins (win)
     function win() {
-        alert("You Won! " +  score +" Was your score.");
+        alert("You Won! " + score + " Was your score.");
         wins++;
         $("#wins").html(wins);
         reset();
@@ -81,20 +81,20 @@ $(document).ready(function () {
 
     //created a function to call whenever a player loses (loser)
     function loser() {
-        alert("You lost! " +  score +" Was your score." + " You needed to match " + computerNumberToGuess + " to win.");
+        alert("You lost! " + score + " Was your score." + " You needed to match " + computerNumberToGuess + " to win.");
         losses++;
         $("#losses").html(losses);
         reset();
     }
     //fuction to check for score
-   /**
-    * 
-    * @param {*} crystalNumber : assumes the value of each crystal random number. 
-    * Changes depending on who the caller is. 
-    */
+    /**
+     * 
+     * @param {*} crystalNumber : assumes the value of each crystal random number. 
+     * Changes depending on who the caller is. 
+     */
     function checkStatus(crystalNumber) {
         score = score + crystalNumber;
-            console.log("New score= " + score);
+        console.log("New score= " + score);
         $("#scoreCard").html(score);
         if (score == computerNumberToGuess) {
             win();
@@ -102,32 +102,32 @@ $(document).ready(function () {
         else if (score > computerNumberToGuess) {
             loser();
         }
-        
+
     }
 
     $("#start").on('click', function () {
-       reset();    
+        reset();
     });
-        
-        //console.log to see if random number are generating for all four crystals everytime I click start.
-        $('.purple').on('click', function () {
-            checkStatus(crystal1Number);
-         
-        })
 
-        $('.yellow').on('click', function () {
-            checkStatus(crystal2Number);
-        })
+    //console.log to see if random number are generating for all four crystals everytime I click start.
+    $('.purple').on('click', function () {
+        checkStatus(crystal1Number);
 
-        $('.red').on('click', function () {
-            checkStatus(crystal3Number);
-        
-        })
-
-        $('.green').on('click', function () {
-            checkStatus(crystal4Number);
-        })
     })
+
+    $('.yellow').on('click', function () {
+        checkStatus(crystal2Number);
+    })
+
+    $('.red').on('click', function () {
+        checkStatus(crystal3Number);
+
+    })
+
+    $('.green').on('click', function () {
+        checkStatus(crystal4Number);
+    })
+})
 
 
 

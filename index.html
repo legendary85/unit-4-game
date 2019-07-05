@@ -2,97 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
-    
-    <title>Crystal Collector</title>
+  <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+
+  <title>Crystal Collector</title>
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
 
-        <div class="heading">
+    <div class="heading">
 
-            <h1>Crystal Collector</h1>
+      <h1>Crystal Collector</h1>
 
-        </div>
-        <section class="instructions">
-            <ul>
-                <li>You will be given a random number at the start of the game.</li>
-                <li>There are four crysrals below. By clicking on a crystal you will add a specific amount of points to
-                    your
-                    total score.</li>
-                <li>You win the game by matching your total score to random number, you lose the game if your total
-                    score
-                    goes above the random number.</li>
-                <li>The value of each crystal is hidden from you until you click on it.</li>
-                <li>Each time when the game starts, the gme will change the values of each crystal.</li>
-            </ul>
-        </section>
-        <div class="button-center">
-            <button id="start" class="btn btn-warning">Generate Numbers</button>
-        </div>
+    </div>
+    <section class="instructions">
+      <ul>
+        <li>You will be given a random number at the start of the game.</li>
+        <li>There are four crysrals below. By clicking on a crystal you will add a specific amount of points to
+          your
+          total score.</li>
+        <li>You win the game by matching your total score to random number, you lose the game if your total
+          score
+          goes above the random number.</li>
+        <li>The value of each crystal is hidden from you until you click on it.</li>
+        <li>Each time when the game starts, the gme will change the values of each crystal.</li>
+      </ul>
+    </section>
+    <div class="button-center">
+      <button id="start" class="btn btn-warning">Generate Numbers</button>
+    </div>
 
     <!-- //bootstap -->
     <div class="card-deck">
-        <div class="card">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Random Number</h5>
-            <p class="card-text" id="random-number"></p>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Random Number</h5>
+          <p class="card-text" id="random-number"></p>
+        </div>
+        <!-- <div class="card-footer"> -->
+        <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+        <!-- </div> -->
+      </div>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title" id="wins-losses">Wins & Losses</h5>
+          <p class="card-text"></p>
+          <div id="wins-loss">
+            <p class="W">Wins:<span id="wins"></span></p>
+            <p class="L">Losses:<span id="losses"></span></p>
+          </div>
+        </div>
+        <!-- <div class="card-footer"> -->
+        <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+        <!-- </div> -->
+      </div>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Your Current Score</h5>
+          <p class="card-text"></p>
+          <div id="scoreHeader">
+            <p><span id="playerScore"></span></p>
+            <div id="scoreCard"></div>
           </div>
           <!-- <div class="card-footer"> -->
-            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-          <!-- </div> -->
-        </div>
-        <div class="card">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title" id="wins-losses">Wins & Losses</h5>
-            <p class="card-text"></p>
-            <div id="wins-loss">
-                <p class="W">Wins:<span id="wins"></span></p>
-                <p class="L">Losses:<span id="losses"></span></p>
-            </div>
-          </div>
-          <!-- <div class="card-footer"> -->
-            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-          <!-- </div> -->
-        </div>
-        <div class="card">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Your Current Score</h5>
-            <p class="card-text"></p>
-            <div id="scoreHeader">
-                    <p><span id="playerScore"></span></p>
-                    <div id="scoreCard"></div>
-                 </div> 
-          <!-- <div class="card-footer"> -->
-            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+          <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
           <!-- </div> -->
         </div>
       </div>
 
       <div class="crystals">
-          <div class="purple"></div>
-          <div class="yellow"></div>
-          <div class="red"></div>
-          <div class="green"></div>
-    </div> 
+        <div class="purple"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+      </div>
 
-</div>
-</div>
+    </div>
+  </div>
 
-    <script src="assets/javascript/game.js"></script>
+  <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
