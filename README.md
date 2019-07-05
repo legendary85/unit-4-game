@@ -2,7 +2,7 @@
 
 When start button is clicked a randomly generated number (19-120) will be displayed .
 
-There will be 4 crystals linked to randomly number values (1-12) that are hidden.
+There will be 4 crystals linked to random number values (1-12) that are hidden.
 
 When the crystals are clicked, a number will be displayed in a "Score" box.
 
