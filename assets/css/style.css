@@ -12,32 +12,26 @@ body {
 .heading{
     text-transform: uppercase;
     font-family: 'Audiowide', cursive;
-
-    font-size: 48px;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 60px;
     color: white;
     /* background-color: #cb6f33; */
     margin: 5px;
-    padding-top: 5px;
+    padding-top: 15px;
     text-align: center;
-    font-size: 50px;
-    /* float: left; */
+
 }
 
 .instructions{
     margin-top: 10px;
-    width: 400px;
+    width: 530px;
     padding: 15px;
     font-family: 'Audiowide', cursive;
-
-
-    /* margin-right: 500px; */
-    /* background-color:black; */
-    /* opacity: .5; */
-    /* filter: alpha(opacity=50); */
 }
 li{
     color: white;
-    font-size: 15px;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 16px;
     line-height: 1.6;  
 }
 .button-center{
@@ -68,6 +62,8 @@ li{
 }
 
 .card{
+    /* width: 75px; */
+    height: 125px;
     margin-top: 20px;
     background-color:white;
     opacity: 0.5;
@@ -95,6 +91,7 @@ li{
 
 
 .crystals{
+    
     position: absolute;
     top: 200px;
     left: 350px;
@@ -105,6 +102,7 @@ li{
 }
 
 .purple{
+    text-shadow: 2px 2px 4px #000;
     position: relative;
     height: 100px;
     width: 100px;
@@ -115,14 +113,23 @@ li{
     
 }
 
+.purple:hover {
+    opacity:0.8;
+}
+
+
 .yellow{
-    
+    text-shadow: 2px 2px 4px #000;
     height: 100px;
     width: 100px;
     float: left;
     margin-right: 10px;
     content:url(../images/yellow.jpg);
     border: solid 1px gray;
+}
+
+.yellow:hover {
+    opacity:0.8;
 }
 .red{
     height: 100px;
@@ -132,12 +139,20 @@ li{
     content:url(../images/red.jpg);
     border: solid 1px gray;
 }
+
+.red:hover {
+    opacity:0.8;
+}
+
 .green{
     height: 100px;
     width: 100px;
     float: left;
     content:url(../images/green.jpg);
     border: solid 1px gray;
+}
+.green:hover {
+    opacity:0.8;
 }
 
 #scoreHeader{
@@ -157,3 +172,38 @@ li{
     /* text-align: center; */
     
 }
+
+@media screen and (max-width: 980px) {
+
+.heading{
+        font-size: 40px;    
+    }
+.instructions{
+        width: 680px;
+    }
+
+.crystals {
+        left: 150px;
+      
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .crystals {
+        top: 160px;
+        left: 140px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .instructions{
+        width: 525px;
+    }
+
+    li{
+        font-size: 12px; 
+    }
+    .crystals {
+        left: 55px;
+    }
+  }
