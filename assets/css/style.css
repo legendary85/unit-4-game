@@ -24,7 +24,7 @@ body {
 
 .instructions{
     margin-top: 10px;
-    width: 530px;
+    width: 5vw;
     padding: 15px;
     font-family: 'Audiowide', cursive;
 }
@@ -173,7 +173,7 @@ li{
     
 }
 
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {
 
 .heading{
         font-size: 40px;    
@@ -205,5 +205,5 @@ li{
     }
     .crystals {
         left: 55px;
-    }
-  }
+    } */
+  /* } */
