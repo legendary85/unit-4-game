@@ -176,3 +176,26 @@ li{
     /* text-align: center; */
     
 }
+
+@media only screen and (max-width: 320px) {
+    .instructions{
+        display: none;
+    }
+    .crystals {
+        
+        top: 100%;
+        left: 0;
+       
+        /* text-align: center; */
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+  .crystals {
+
+    top: 100%;
+    left: 30%;
+  }
+}
+
+
