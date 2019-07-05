@@ -26,50 +26,119 @@
         <section class="instructions">
             <ul>
                 <li>You will be given a random number at the start of the game.</li>
-                <li>There are four crysrals below. By clicking on a crystal you will add a specific amount of points to your
-                total score.</li>
-                <li>You win the game by matching your total score to random number, you lose the game if your total score
-                goes above the random number.</li>
+                <li>There are four crysrals below. By clicking on a crystal you will add a specific amount of points to
+                    your
+                    total score.</li>
+                <li>You win the game by matching your total score to random number, you lose the game if your total
+                    score
+                    goes above the random number.</li>
                 <li>The value of each crystal is hidden from you until you click on it.</li>
                 <li>Each time when the game starts, the gme will change the values of each crystal.</li>
             </ul>
         </section>
         <div class="button-center">
-        <button id="start" class="btn btn-warning">Generate Numbers</button>
+            <button id="start" class="btn btn-warning">Generate Numbers</button>
         </div>
 
-        <div class="computerRandom"> 
+    <!-- //bootstap -->
+    <div class="card-deck">
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Random Number</h5>
+            <p class="card-text" id="random-number"></p>
+          </div>
+          <!-- <div class="card-footer"> -->
+            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+          <!-- </div> -->
+        </div>
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title" id="wins-losses">Wins & Losses</h5>
+            <p class="card-text"></p>
+            <div id="wins-loss">
+                <p class="W">Wins:<span id="wins"></span></p>
+                <p class="L">Losses:<span id="losses"></span></p>
+            </div>
+          </div>
+          <!-- <div class="card-footer"> -->
+            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+          <!-- </div> -->
+        </div>
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Your Current Score</h5>
+            <p class="card-text"></p>
+            <div id="scoreHeader">
+                    <p>Your total score is:<span id="playerScore"></span></p>
+                    <div id="scoreCard"></div>
+                 </div> 
+          <!-- <div class="card-footer"> -->
+            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+          <!-- </div> -->
+        </div>
+      </div>
+
+         <div class="crystals">
+          <div class="purple"></div>
+          <div class="yellow"></div>
+          <div class="red"></div>
+          <div class="green"></div>
+    </div> 
+
+</div>
+
+
+
+
+
+
+      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="computerRandom">
             <h3>Random Number:</h3>
             <h1 class="text-center" id="random-number"></h1>
 
-        </div>
-        <div id="wins-loss">
-            <p>Wins:<span class="wins"></span></p>
-            <p>Losses:<span class="losses"></span></p>
-        </div>
+        </div> -->
+        <!-- <div id="wins-loss">
+            <p class="W">Wins:<span id="wins"></span></p>
+            <p class="L">Losses:<span id="losses"></span></p>
+        </div> -->
 
-        <div id="scoreHeader">
+        <!-- <div id="scoreHeader">
             <p>Your total score is:<span id="playerScore"></span></p>
-        <div id="scoreCard"></div>
-
-        <div class="crystals">
-            <div class="purple"></div>
-            <div class="yellow"></div>
-            <div class="red"></div>
-            <div class="green"></div>
-        </div>
+            <div id="scoreCard"></div>
+         </div>  -->
 
 
-        
 
-        </div>
+                
+                
 
 
 
 
 
 
-    </div>
+
+
+
 
 
 
